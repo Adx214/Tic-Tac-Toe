@@ -84,12 +84,7 @@ nav ul{
 .br-0{
     border-right: 0;
 }
-.line{
-    position: absolute;
-    height: 3px;
-    width: 30vw;
-    background-color: red;
-}
+
 @media screen and (max-width: 600px) {
     .gameContainer{
         flex-wrap: wrap;
