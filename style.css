@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO+Guides&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding: 15px;
+    font-size: 20px;
+    
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.gameinfo{
+    margin: 0 25px;
+    padding: 5 5px;
+    font-family: "Quicksand", serif;
+    color: white;
+}
+.info{
+    font-weight: 900;
+    font-size: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Quicksand", serif;
+    font-size: 8vw;
+    text-align: center;
+    position: relative;
+}
+.box{
+    /* background-color: white; */
+    border: 5px solid black;
+    cursor: pointer;
+    font-family: "Quicksand", serif;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: white;
+}
+/* .imgbox{
+    opacity: 0;
+    width: 40px;
+} */
+#gif{
+    opacity: 0;
+    width: 20vw;
+}
+#reset{
+    height: 5vw;
+    width: 7vw;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+#reset:hover{
+    background-color: coral;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.line{
+    position: absolute;
+    height: 3px;
+    width: 30vw;
+    background-color: red;
+}
+@media screen and (max-width: 600px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo h1{
+        font-size: 20px;
+    }
+    .info{
+        font-size: 15px;
+    }
+    #reset{
+        font-size: 8px;
+    }
+    .container{
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
