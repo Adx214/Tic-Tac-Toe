@@ -19,6 +19,7 @@ reset.addEventListener("click",()=>{
     Array.from(boxes).forEach((Element) => {
         Element.textContent = "";
         Element.style.pointerEvents = 'auto'; 
+        image.style.opacity=0;
     })
 })
 const cturn = (turn) => {
