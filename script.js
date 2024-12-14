@@ -20,6 +20,7 @@ reset.addEventListener("click",()=>{
         Element.textContent = "";
         Element.style.pointerEvents = 'auto'; 
         image.style.opacity=0;
+        
     })
 })
 const cturn = (turn) => {
